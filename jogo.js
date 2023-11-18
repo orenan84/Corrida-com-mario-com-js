@@ -30,7 +30,7 @@ setInterval(
 )
 
 // Eventos para ação do jogo
-window.document.body.addEventListener('keydown', function pular(event) {
+window.document.body.addEventListener('click', 'keydown', function pular(event) {
     if (event.key == " " || event.key == "ArrowUp") {
         efeitoPulo()
         mario.src = "https://i.pinimg.com/originals/51/5a/8d/515a8da287ae3d77dfbf851515c63734.gif"
@@ -57,7 +57,7 @@ window.document.body.addEventListener('keydown', function pular(event) {
         }
     }
 })
-telaInicio.addEventListener("click", "keydown", function () {
+telaInicio.addEventListener(keydown", function () {
     tema.play()
     escolhaDeNivel.style.display = "none"
     telaJogo.style.display = "flex"
