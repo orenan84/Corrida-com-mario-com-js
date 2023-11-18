@@ -3,6 +3,7 @@ gameOver = window.document.getElementById("gameover")
 mario = window.document.getElementById("mario")
 chamine = window.document.getElementById("chamine")
 telaInicio = window.document.getElementById("iniciar")
+let botaoReinicio = window.document.getElementById("iniciar")
 // Váriaveis globais
 let horaInicialAtivada = false
 let pontuacao = 0
