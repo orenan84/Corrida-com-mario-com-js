@@ -102,6 +102,6 @@ function efeitoperdeu() {
     perdeu.play()
 }
 botaoReinicio.addEventListener('click', function(){
-    window.location.reload()
+    location.reload()
 })
 
