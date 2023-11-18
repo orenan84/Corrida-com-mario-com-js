@@ -3,7 +3,7 @@ gameOver = window.document.getElementById("gameover")
 mario = window.document.getElementById("mario")
 chamine = window.document.getElementById("chamine")
 telaInicio = window.document.getElementById("iniciar")
-let botaoReinicio = window.document.getElementById("iniciar")
+let botaoReinicio = window.document.getElementById("jogarDeNovo")
 // Váriaveis globais
 let horaInicialAtivada = false
 let pontuacao = 0
@@ -101,5 +101,7 @@ function efeitoperdeu() {
     perdeu.currentTime = 1
     perdeu.play()
 }
-
+botaoReinicio.addEventListener('click', function(){
+    window.location.reload()
+})
 
