@@ -1,0 +1,128 @@
+body{
+    margin: 0; padding: 0;
+}
+#telaJogo {
+    display: none;
+    background-color: lightskyblue;
+    margin: 6vw auto;
+    width: 956px;
+    height: 409px;
+    overflow: hidden;
+    border: 4.098px solid green;
+    position: relative;
+}
+
+#mario {
+    left: 100.2px;
+    position: absolute;
+    top: 160px;
+    height: 245.88px;
+    width: 245.88px;
+}
+
+#chamine {
+    position:absolute;
+    top: 315px;
+    left: 940px;
+    height: 94.62px;
+    width: 94.62px;
+}
+
+@keyframes animachamine {
+    from {
+        left: 940px;
+    }
+    to {
+        left: -90px
+    
+    }}
+
+
+@keyframes descer {
+    0%{
+        top: 160px;
+    }
+    50% {
+        top: 50px;
+    }
+    100%{
+        top: 160px;
+    }
+}
+
+.nuvem {
+    margin: auto;
+    width: 150px;
+    height: 120px;
+    margin-top: 13.66px;
+    margin-left: 60px;
+    animation: nuvens 3s linear infinite;
+}
+
+@keyframes nuvens {
+    from{
+        margin-left: -700px;
+    }
+    to {
+        margin-left: 900px;
+    }
+    
+}
+#gameover{
+    display: none;
+    margin: 7vw auto;
+    background-color: lightblue;
+    width: 25vw;
+    height: 25vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+    border: 0.2vw solid rgb(204, 204, 238);
+}
+#jogarDeNovo{
+    border: 0.1vw solid black;
+    border-radius: 0.5vw;
+    background-color: rgb(117, 166, 182);
+    cursor: pointer;
+    margin-top: 0.7vw;
+    font-size: 1.5vw;
+}
+#jogarDeNovo:hover{
+    background-color: rgb(84, 130, 158);
+}
+#iniciar{
+    height: 2.5vw;
+    width: 9vw;
+}
+
+#escolhaDeNivel{
+    margin: 15vw auto;
+    height: 10vw;
+    width: 25vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5vw solid lightblue;
+    border-radius: 1vw;
+
+}
+#iniciar{
+    margin-top: 1vw;
+    border: 0.1vw solid black;
+    border-radius: 1vw;
+    font-weight: 0.6vw;
+    cursor: pointer;
+}
+#opcao{
+    margin-top: 0.5vw;
+    border: 0.1vw solid black;
+    border-radius: 1vw;
+    height: 2vw;
+    width: 8vw;
+}
+#gameoveraviso{
+    font-size: 2vw;
+}

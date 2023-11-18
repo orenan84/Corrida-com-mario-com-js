@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do mário</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>    
+    <div id="escolhaDeNivel">
+        <form>
+            <label for="opcao">SELECIONE O NÍVEL DO JOGO!</label>
+            <div>
+            <select id="opcao" name="opcao">
+                <option>FÁCIL</option>
+                <option>MÉDIO</option>
+                <option>DIFICÍL</option>
+            </select>
+            </div>
+            <div>
+            <input type="button" value="START GAME" class="start" id="iniciar" >
+            </div>
+        </form>
+           
+    </div>
+    <div id="telaJogo">
+    <img src="https://i.pinimg.com/originals/7b/14/71/7b147107bd59b6ee927f9b1993a0bb69.png" alt="" class="nuvem">
+    <img src="https://i.pinimg.com/originals/7b/14/71/7b147107bd59b6ee927f9b1993a0bb69.png" alt="" class="nuvem">
+    <img src="https://i.pinimg.com/originals/7b/14/71/7b147107bd59b6ee927f9b1993a0bb69.png" alt="" class="nuvem">
+    <img src="https://img.freepik.com/icones-gratis/chamine_318-519913.jpg?w=360" alt="" id="chamine">
+
+    <img src="https://media.tenor.com/UkvleU1dQK4AAAAi/2d-mario-running.gif" alt="" id="mario">
+    </div>
+    <div id="gameover">
+        <span id="gameoveraviso">GAME OVER!<span> 
+        <div>Sua pontuação: <span id="pontuacao">0</span></div> 
+          <a href="jogo.html">
+            <input type="button" value="JOGAR DE NOVO" name="denovo" id="jogarDeNovo">
+            </a>
+    </div> 
+</body>
+</html>
+<script src="jogo.js"></script>
