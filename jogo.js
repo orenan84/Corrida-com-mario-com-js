@@ -1,8 +1,8 @@
 // Váriaveis para referenciar conteúdo no HTML
-gameOver = window.document.getElementById("gameover")
-mario = window.document.getElementById("mario")
-chamine = window.document.getElementById("chamine")
-telaInicio = window.document.getElementById("iniciar")
+let gameOver = window.document.getElementById("gameover")
+let mario = window.document.getElementById("mario")
+let chamine = window.document.getElementById("chamine")
+let telaInicio = window.document.getElementById("iniciar")
 let botaoReinicio = window.document.getElementById("jogarDeNovo")
 // Váriaveis globais
 let horaInicialAtivada = false
@@ -57,7 +57,7 @@ window.document.body.addEventListener('keydown', function pular(event) {
         }
     }
 })
-telaInicio.addEventListener("click", function () {
+telaInicio.addEventListener("click", "keydown", function () {
     tema.play()
     escolhaDeNivel.style.display = "none"
     telaJogo.style.display = "flex"
